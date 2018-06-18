@@ -58,15 +58,35 @@ public class BodyPartQuiz {
 			String guess2 = JOptionPane.showInputDialog("who is this?");
 			if(guess2.equalsIgnoreCase("leonardo")) {
 				JOptionPane.showMessageDialog(null, "Correct!");
+				score += 1;
 			}
 			else {
 				JOptionPane.showMessageDialog(null, "wrong, that is leonardo");
 			}
 			showNextImage();
-
+			JOptionPane.showMessageDialog(null, "Your current score is " + score);
 			
+			String guess3 = JOptionPane.showInputDialog("who is this?");
+			if(guess3.equalsIgnoreCase("morgan")) {
+				JOptionPane.showMessageDialog(null, "Correct!");
+				score += 1;
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "wrong, that is morgan");
+			}
+			showNextImage();
+			JOptionPane.showMessageDialog(null, "Your current score is " + score);
 			
-			
+			String guess4 = JOptionPane.showInputDialog("who is this?");
+			if(guess4.equalsIgnoreCase("jack")) {
+				JOptionPane.showMessageDialog(null, "Correct!");
+				score += 1;
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "wrong, that is jack");
+			}
+			JOptionPane.showMessageDialog(null, "Your current score is " + score);
+			System.exit(0);
 			
 		}
 
@@ -91,7 +111,7 @@ public class BodyPartQuiz {
 		window.add(panel);
 		
 		// 3. Change the size of the window so that you can only see part of the image.		
-		window.setSize(100,100);
+		window.setSize(400,400);
 		
 		showNextImage();
 		
